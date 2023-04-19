@@ -1,0 +1,39 @@
+.netflix-button {
+  /* Similar To Netflix Sans, the original Netflix font */
+  font-family: "Circular Std", sans-serif;
+  background-color: #e50914;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.netflix-button-loading {
+  cursor: default;
+  background-color: #5c0005;
+  color: hsla(0, 0%, 100%, 0);
+}
+
+.basic-spinner {
+  animation: full-rotation 1s linear infinite;
+  background-image: url(https://assets.nflxext.com/ffe/siteui/common/site-spinner-240-light.png);
+  background-size: cover;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+}
+
+@keyframes full-rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}

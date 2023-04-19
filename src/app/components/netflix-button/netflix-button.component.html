@@ -1,0 +1,7 @@
+<button
+  [ngClass]="{ 'netflix-button-loading': isLoading }"
+  class="netflix-button"
+>
+  Sign In
+  <div *ngIf="isLoading" class="basic-spinner"></div>
+</button>
