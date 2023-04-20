@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NetflixButtonComponent } from './components/netflix-button/netflix-button.component';
+import { NetflixInputComponent } from './components/netflix-input/netflix-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NetflixButtonComponent
+    NetflixButtonComponent,
+    NetflixInputComponent
   ],
   imports: [
     BrowserModule
