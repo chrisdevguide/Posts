@@ -1,0 +1,86 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #141414;
+  font-family: "Circular Std", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5vw;
+  font-weight: unset;
+  letter-spacing: 0;
+}
+
+.profile-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2vw;
+  flex-wrap: wrap;
+}
+
+.profile-icon div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10vw;
+  width: 10vw;
+  border-radius: 4px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.profile-icon div > div {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.profile-icon div > div:hover {
+  border: 0.2em solid #e5e5e5;
+}
+
+.profile-icon p {
+  color: grey;
+}
+
+.profile-icon:hover {
+  cursor: pointer;
+}
+
+.profile-icon:hover p {
+  color: white;
+}
+
+.profile-button {
+  background-color: transparent;
+  border: 1px solid grey;
+  color: grey;
+  cursor: pointer;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  margin: 3em 0 1em;
+  padding: 0.5em 1.5em;
+}
+
+.profile-button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+}

@@ -1,0 +1,14 @@
+<main>
+  <section>
+    <h1>Who's watching?</h1>
+    <div class="profile-icons-container">
+      <div *ngFor="let profile of netflixProfiles" class="profile-icon">
+        <div [style.background-image]="'url(' + profile.image + ')'">
+          <div></div>
+        </div>
+        <p>{{ profile.name }}</p>
+      </div>
+    </div>
+    <button class="profile-button">Manage Profiles</button>
+  </section>
+</main>
