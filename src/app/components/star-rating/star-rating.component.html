@@ -1,0 +1,13 @@
+<div>
+  <svg
+    (click)="emitRating(i + 1)"
+    *ngFor="let item of [].constructor(5); let i = index"
+    width="15%"
+    viewBox="0 0 100 100"
+  >
+    <polygon
+      [ngClass]="{ 'star-checked': i < checkedStars }"
+      points="50,0 63,38 100,38 69,59 82,96 50,76 18,96 31,59 0,38 37,38"
+    />
+  </svg>
+</div>
